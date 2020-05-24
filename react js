@@ -30,3 +30,23 @@ console.log(myfun4(3))
 
 const myfun5 = num => num*5
 console.log(myfun5(2))
+
+const my1 = [1,2,3,4,5]
+const my2 = [...my1,6,7,8,9,10]
+console.log(my2);
+const name = {
+  firstname:'Fasih',
+  lastname:'Irfan'
+}
+const merger = {
+  ...name,
+  age:23
+}
+console.log(merger);
+function mydata(...args)
+{
+  return args.filter(el =>el === 3)
+  
+}
+
+console.log(mydata(1,2,3)) 
